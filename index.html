@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./app.css">
+    <title>Zing MP3</title>
+</head>
+
+<body>
+    <div class="app">
+        <div class="music">
+            <div class="music__board">
+                <div class="music__board__img-wrap">
+                    <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bXVzaWN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="" 
+                    class="music__board__img">
+                </div>
+                <div class="music__board__info">
+                    <p class="music__board__info-name">Ten bai hat</p>
+                    <p class="music__board__info-singer">Ten ca si</p>
+                </div>
+                <div class="music__board__range-wrap">
+                    <input value="0" type="range" class="music__board__range">
+                    <audio hidden src="./music/cualado.mp3" class="music__board__audio"></audio>
+                </div>
+                <div class="music__board__timer">
+                    <span class="music__board__timer-played">00:00</span>
+                    <span class="music__board__timer-remaining">00:00</span>
+                </div>
+                <div class="music__board__controls">
+                    <div class="music__board__controls-choose btn-random">
+                        <ion-icon class="music__board-icon" name="shuffle"></ion-icon>
+                    </div>
+                    <div class="music__board__controls-choose btn-prev">
+                        <ion-icon class="music__board-icon" name="rewind"></ion-icon>
+                    </div>
+                    <div class="music__board__controls-choose btn-play">
+                        <ion-icon class="music__board-icon" name="play"></ion-icon>
+                    </div>
+                    <div class="music__board__controls-choose btn-next">
+                        <ion-icon class="music__board-icon" name="fastforward"></ion-icon>
+                    </div>
+                    <div class="music__board__controls-choose btn-loop">
+                        <ion-icon class="music__board-icon" name="return-left"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="music__playlist">
+                <h2 class="music__playlist-title"><ion-icon class="music__playlist-title__icon" name="musical-notes"></ion-icon> Playlist Bài hát</h2>
+                <div class="music__playlist-list">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
